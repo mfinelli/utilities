@@ -1,6 +1,11 @@
 # Utilities
 Random helpful scripts.
 
+## BW PDF
+This script will convert a color PDF into a black and white PDF.
+
+    $ ./bw-pdf.sh "input.pdf" "output.pdf"
+
 ## Prefix
 This script will rename files that begin with the first prefix substituting for the second.
 
