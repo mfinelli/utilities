@@ -6,6 +6,15 @@ This script will convert a color PDF into a black and white PDF.
 
     $ ./bw-pdf.sh "input.pdf" "output.pdf"
 
+## Enc7z
+This script generates an encrypted 7z archive of a folder. It also encrypts
+the filenames of the archive. It is intented for large files that are already
+compressed and so it does no compression itself. It prompts for the number
+of megabytes by which to split the archive, as well as the destination and
+password.
+
+    $ ./enc7z "Folder To Archive"
+
 ## Prefix
 This script will rename files that begin with the first prefix substituting for the second.
 
