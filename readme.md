@@ -31,7 +31,7 @@ compressed and so it does no compression itself. It prompts for the number
 of megabytes by which to split the archive, as well as the destination and
 password.
 
-    $ ./enc7z "Folder To Archive"
+    $ ./enc7z.sh "Folder To Archive"
 
 ## Prefix
 This script will rename files that begin with the first prefix substituting
