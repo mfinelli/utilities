@@ -24,6 +24,6 @@ read -p "Split archive into MB chunks: " SPLIT_SIZE
 7z a -t7z \
     "$DEST_FOLDER" "$SRC_FOLDER" \
     -mx0 \
-    -v"${SPLIT_SIZE}"m \
+    -v"${SPLIT_SIZE}"000000b \
     -mhe=on \
     -p 
