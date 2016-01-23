@@ -1,6 +1,24 @@
 # Utilities
 Random helpful scripts.
 
+## B27z
+This script uploads a folder of 7zip volumes to Backblaze's B2 cloud service.
+The [b2](https://github.com/Backblaze/B2_Command_Line_Tool) command line tool
+and, obviously, a B2 account (currently in beta).
+
+It uploads files into the following structure:
+
+    s\
+        something\
+            something.001
+            something.002
+            something.002
+
+You need to already have run the authorize\_account command and pass the
+bucket name.
+
+    $ ./b27z.sh "bucket_name"
+
 ## BW PDF
 This script will convert a color PDF into a black and white PDF.
 
