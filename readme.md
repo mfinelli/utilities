@@ -33,6 +33,12 @@ password.
 
     $ ./enc7z.sh "Folder To Archive"
 
+## Find Md5
+This script will search the current directory for directories containing an
+md5sum file and then change into those directories and run the md5sum check.
+
+    $ ./find-md5.sh
+
 ## Prefix
 This script will rename files that begin with the first prefix substituting
 for the second.
