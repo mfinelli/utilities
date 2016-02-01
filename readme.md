@@ -39,6 +39,14 @@ md5sum file and then change into those directories and run the md5sum check.
 
     $ ./find-md5.sh
 
+## Gzipped
+This script is useful for ensuring that you server is configured correctly by
+downloading a file twice. The first time it will not send any headers and then
+the second time it will send gzip in the accept-encoding header to allow you
+to compare the difference in download size.
+
+    $ ./gzipped.sh http://www.example.com
+
 ## Prefix
 This script will rename files that begin with the first prefix substituting
 for the second.
