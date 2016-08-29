@@ -59,3 +59,10 @@ part. Obviously, it should only be run on a directory that contains split 7zip
 files.
 
     $ ./re7z.sh
+
+## Shred Dir
+This script will shred (and remove) every file in the directories matching
+the pattern and then remove the directory. Use with caution as this is
+obviously very dangerous.
+
+    $ ./shred_dir.sh pattern
