@@ -60,6 +60,20 @@ files.
 
     $ ./re7z.sh
 
+## S3
+It is sometimes necessary to upload files to amazon's simple storage service
+in a non-multipart manner. You can pass `--disable-multipart` to the
+[s3cmd](http://s3tools.org/s3cmd) command, however it does not work very well
+with larger files.
+
+This script uploads files to an aws s3 bucket in a non-multipart manner using
+the [awscli](https://github.com/aws/aws-cli)'s low-level s3api put-object
+command. Obviously, you need to have the `awscli` installed and configured,
+as well as having access to the bucket. You must also have `basename`,
+`realpath`, and `file` in your path.
+
+    $ ./s3.sh bucket path/to/file
+
 ## Shred Dir
 This script will shred (and remove) every file in the directories matching
 the pattern and then remove the directory. Use with caution as this is
